@@ -21,6 +21,7 @@ export const ROUTES: RouteInfo[] = [
 })
 export class SidebarComponent implements OnInit {
   public isCollapsed = false;
+  public isCollapsed2 = false;
   constructor() {}
 
   ngOnInit() {}

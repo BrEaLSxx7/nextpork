@@ -1,5 +1,4 @@
 import { UsuariosComponent } from './usuarios/usuarios.component';
-import { AdminComponent } from './admin/admin.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { SolicitarComponent } from './solicitar/solicitar.component';
 import { GranjaComponent } from './granja/granja.component';
@@ -9,7 +8,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
-  { path: 'admin', component: AdminComponent },
   { path: 'granja', component: GranjaComponent },
   { path: 'requeridos', component: RequeridosComponent },
   { path: 'solicitar', component: SolicitarComponent },

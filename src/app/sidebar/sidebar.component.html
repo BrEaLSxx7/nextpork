@@ -11,54 +11,45 @@
 <div class="sidebar-wrapper">
   <ul class="nav">
 
-    <li routerLinkActive="active" class="nav-item">
-      <a routerLink="/table-list">
+    <li  class="nav-item">
+      <a (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
         <i class="fa fa-plus"></i>
         <p>Pedidos</p>
       </a>
     </li>
-    <li routerLinkActive="active" class="nav-item">
-      <a routerLink="/admin">
-        <i class="fa fa-plus"></i>
-        <p>Admin</p>
-      </a>
-    </li>
-    <li routerLinkActive="active" class="nav-item">
-      <a routerLink="/solicitar">
-        <i class="fa fa-plus"></i>
-        <p>Solicitar</p>
-      </a>
-    </li>
-    <li routerLinkActive="active" class="nav-item">
-      <a routerLink="/requeridos">
-        <i class="fa fa-plus"></i>
-        <p>Requeridos</p>
-      </a>
-    </li>
-    <li routerLinkActive="active" class="nav-item">
-      <a routerLink="/usuarios">
-        <i class="fa fa-plus"></i>
-        <p>Usuarios</p>
-      </a>
-    </li>
-    <li routerLinkActive="active" class="nav-item">
-      <a routerLink="/granja">
-        <i class="fa fa-plus"></i>
-        <p>Granjas</p>
-      </a>
-    </li>
-
-    <p>
-      <button type="button" class="btn btn-primary" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">Hola</button>
-    </p>
     <div id="collapseExample" [ngbCollapse]="!isCollapsed">
-      <div class="card">
-        <div class="card-body">
-          sadjsd
-        </div>
-
-      </div>
+        <li routerLinkActive="active" class="nav-item">
+            <a routerLink="/solicitar">
+              <i class="fa fa-plus"></i>
+              <p>Solicitar</p>
+            </a>
+          </li>
+          <li routerLinkActive="active" class="nav-item">
+            <a routerLink="/requeridos">
+              <i class="fa fa-plus"></i>
+              <p>Requeridos</p>
+            </a>
+          </li>
     </div>
-
+    <li  class="nav-item">
+        <a (click)="isCollapsed2 = !isCollapsed2" [attr.aria-expanded]="!isCollapsed2" aria-controls="collapseExample2">
+          <i class="fa fa-plus"></i>
+          <p>Admin</p>
+        </a>
+      </li>
+      <div id="collapseExample2" [ngbCollapse]="!isCollapsed2">
+          <li routerLinkActive="active" class="nav-item">
+              <a routerLink="/usuarios">
+                <i class="fa fa-plus"></i>
+                <p>Usuarios</p>
+              </a>
+            </li>
+            <li routerLinkActive="active" class="nav-item">
+              <a routerLink="/granja">
+                <i class="fa fa-plus"></i>
+                <p>Granjas</p>
+              </a>
+            </li>
+      </div>
   </ul>
 </div>
