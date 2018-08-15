@@ -6,12 +6,20 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { InicioComponent } from './inicio/inicio.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AdminComponent } from './admin/admin.component';
+import { GranjaComponent } from './granja/granja.component';
+import { SolicitarComponent } from './solicitar/solicitar.component';
+import { RequeridosComponent } from './requeridos/requeridos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    SidebarComponent
+    SidebarComponent,
+    AdminComponent,
+    GranjaComponent,
+    SolicitarComponent,
+    RequeridosComponent
   ],
   imports: [
     BrowserModule,
