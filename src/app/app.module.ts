@@ -12,6 +12,7 @@ import { RequeridosComponent } from './requeridos/requeridos.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { FooterComponent } from './footer/footer.component';
+import { ReportesComponent } from './reportes/reportes.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     RequeridosComponent,
     NavbarComponent,
     UsuariosComponent,
-    FooterComponent
+    FooterComponent,
+    ReportesComponent
   ],
   imports: [
     BrowserModule,
