@@ -11,6 +11,7 @@ import { GranjaComponent } from './granja/granja.component';
 import { SolicitarComponent } from './solicitar/solicitar.component';
 import { RequeridosComponent } from './requeridos/requeridos.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     GranjaComponent,
     SolicitarComponent,
     RequeridosComponent,
-    NavbarComponent
+    NavbarComponent,
+    UsuariosComponent
   ],
   imports: [
     BrowserModule,
