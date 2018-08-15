@@ -1,3 +1,4 @@
+import { UsuariosComponent } from './usuarios/usuarios.component';
 import { AdminComponent } from './admin/admin.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { SolicitarComponent } from './solicitar/solicitar.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'granja', component: GranjaComponent },
   { path: 'requeridos', component: RequeridosComponent },
   { path: 'solicitar', component: SolicitarComponent },
+  { path: 'usuarios', component: UsuariosComponent },
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 
