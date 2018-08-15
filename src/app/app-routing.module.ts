@@ -3,6 +3,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { SolicitarComponent } from './solicitar/solicitar.component';
 import { GranjaComponent } from './granja/granja.component';
 import { RequeridosComponent } from './requeridos/requeridos.component';
+import { ReportesComponent } from './reportes/reportes.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'requeridos', component: RequeridosComponent },
   { path: 'solicitar', component: SolicitarComponent },
   { path: 'usuarios', component: UsuariosComponent },
+  { path: 'reportes', component: ReportesComponent },
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 

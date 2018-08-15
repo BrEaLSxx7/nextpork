@@ -1,0 +1,10 @@
+.sidebar:after,
+.off-canvas-sidebar:after {
+  background: #28b463;
+  background: linear-gradient(#28b463 0%, #28b463 80%);
+  z-index: 3;
+}
+.panel-header-sm{
+  height: 10vh;
+  padding: 0;
+}
