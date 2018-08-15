@@ -3,48 +3,53 @@
     <nextpork-sidebar></nextpork-sidebar>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="card mt-5 text-center">
-          <h3 class="card-title">Crear Usuarios</h3>
-          <div class="card-body">
-            <form action="">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label>Nombre</label>
-                  <input type="text" class="form-control" placeholder="Introduzca un nombre" required>
+  <div class="main-panel">
+    <nextpork-navbar></nextpork-navbar>
+    <div class="panel-header panel-header-sm">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card mt-5 text-center">
+            <h3 class="card-title">Crear Usuarios</h3>
+            <div class="card-body">
+              <form action="">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" placeholder="Introduzca un nombre" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Telefono</label>
+                    <input type="number" class="form-control" placeholder="Introduzca un telefono">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Correo</label>
+                    <input type="email" class="form-control" placeholder="Introduzca un correo">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Introduzca una contraseña">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Rol</label>
+                    <select class="form-control">
+                      <option hidden selected>Seleccione un rol</option>
+                      <option>ADMIN</option>
+                      <option>USUARIO</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6 mt-3">
+                    <button type="submit" class="btn btn-success form-control">Crear</button>
+                  </div>
                 </div>
-                <div class="form-group col-md-6">
-                  <label>Telefono</label>
-                  <input type="number" class="form-control" placeholder="Introduzca un telefono">
-                </div>
-                <div class="form-group col-md-6">
-                  <label>Correo</label>
-                  <input type="email" class="form-control" placeholder="Introduzca un correo">
-                </div>
-                <div class="form-group col-md-6">
-                  <label>Contraseña</label>
-                  <input type="password" class="form-control" placeholder="Introduzca una contraseña">
-                </div>
-                <div class="form-group col-md-6">
-                  <label>Rol</label>
-                  <select class="form-control">
-                    <option hidden selected>Seleccione un rol</option>
-                    <option>ADMIN</option>
-                    <option>USUARIO</option>
-                  </select>
-                </div>
-                <div class="form-group col-md-6 mt-3">
-                  <button type="submit" class="btn btn-success form-control">Crear</button>
-                </div>
-              </div>
 
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <nextpork-footer></nextpork-footer>
   </div>
-
 </div>

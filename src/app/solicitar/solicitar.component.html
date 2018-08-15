@@ -1,95 +1,87 @@
-<div class="wraper">
+<div class="wrapper">
   <div class="sidebar">
     <nextpork-sidebar></nextpork-sidebar>
   </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="card mt-5">
-          <h4 class="card-title ml-3 mt-2">Solicitar pedidos</h4>
-
-
-          <div class="card-body">
-            <form action="">
-              <div class="form-row">
-                <div class="form-group col-md-6 ml-1">
-                  <label>Seleccione la granja</label>
-                  <select class="form-control">
-                    <option>Ejemplo1</option>
-                    <option>Ejemplo2</option>
-                  </select>
+  <div class="main-panel">
+    <nextpork-navbar></nextpork-navbar>
+    <div class="panel-header panel-header-sm">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card mt-3">
+            <h4 class="card-title ml-3 mt-2">Solicitar pedidos</h4>
+            <div class="card-body">
+              <form action="">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Busca tu producto</label>
+                    <input type="text" class="form-control" placeholder="Buscar producto">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Seleccione la granja</label>
+                    <select class="form-control">
+                      <option>Ejemplo1</option>
+                      <option>Ejemplo2</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="form-group col-md-6 ml-1">
-                  <label>Busca tu producto</label>
-                  <input type="text" class="form-control" placeholder="Buscar producto">
+              </form>
+              <div class="col-md-12 text-center">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Referencia</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Agregar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Acetaminofen</td>
+                        <td>
+                          <input type="number" class="form-control w-50 offset-4">
+                        </td>
+                        <td>
+                          <i class="fa fa-plus fa-2x"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Amoxicilina</td>
+                        <td>
+                          <input type="number" class="form-control w-50 offset-4">
+                        </td>
+                        <td>
+                          <i class="fa fa-plus fa-2x"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Benzocaína</td>
+                        <td>
+                          <input type="number" class="form-control w-50 offset-4">
+                        </td>
+                        <td>
+                          <i class="fa fa-plus fa-2x"></i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
+                <button class="btn btn-success offset-8">Solicitar</button>
+              </div>
 
-              </div>
-            </form>
-            <div class="col-md-12 text-center">
-              <div class="table-responsive">
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th scope="col">Codigo</th>
-                      <th scope="col">Referencia</th>
-                      <th scope="col">Cantidad</th>
-                      <th scope="col">Agregar</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Acetaminofen</td>
-                      <td>
-                        <input type="number" class="form-control w-50 offset-4">
-                      </td>
-                      <td>Icono Agregar</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Amoxicilina</td>
-                      <td>
-                        <input type="number" class="form-control w-50 offset-4">
-                      </td>
-                      <td>Icono Agregar</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Benzocaína</td>
-                      <td>
-                        <input type="number" class="form-control w-50 offset-4">
-                      </td>
-                      <td>Icono Agregar</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <button class="btn btn-success offset-11">Solicitar</button>
+
             </div>
 
-
           </div>
-
         </div>
       </div>
     </div>
+    <nextpork-footer></nextpork-footer>
   </div>
-
 </div>
-
-<!-- <ng-template #content let-c="close" let-d="dismiss">
-  <div class="modal-header">
-    <h4 class="modal-title">Modal</h4>
-    <button type="button" class="close" aria-label="close" (click)="d('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    <p>Holaa</p>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-info" (click)="c('Close click')">Cerrar</button>
-  </div>
-</ng-template> -->
